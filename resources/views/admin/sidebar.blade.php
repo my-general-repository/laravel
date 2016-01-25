@@ -1,34 +1,32 @@
 <aside class="main-sidebar">
     <section class="sidebar">
-        <div class="user-panel">
-            <div class="pull-left image">
-                <img src="{{ asset("/bower_components/AdminLTE/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image" />
-            </div>
-            <div class="pull-left info">
-                <p>Alexander Pierce</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-        </div>
-
-        <form action="#" method="get" class="sidebar-form">
+        <form action="/search" method="post" class="sidebar-form">
             <div class="input-group">
-                <input type="text" name="q" class="form-control" placeholder="Търси продукт..."/>
+                <input type="text" name="search" class="form-control" placeholder="Търси продукт..."/>
 <span class="input-group-btn">
   <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
 </span>
             </div>
         </form>
         <ul class="sidebar-menu">
-            <li class="header">HEADER</li>
-            <li class="active"><a href="#"><span>Link</span></a></li>
-            <li><a href="#"><span>Another Link</span></a></li>
+            <li><a href="#"><span>Dashboard</span></a></li>
+            <li class="header">Продукти</li>
+            <li><a href="/products"><span>Продукти</span></a></li>
+            <li><a href="/brands"><span>Марки</span></a></li>
+            <li><a href="/types"><span>Видове</span></a></li>
             <li class="treeview">
-                <a href="#"><span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <a href="#"><span>Региони</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">Link in level 2</a></li>
-                    <li><a href="#">Link in level 2</a></li>
+                    <li><a href="/countries">Държава</a></li>
+                    <li><a href="/regions">Регион</a></li>
                 </ul>
             </li>
+            <li class="header">Информация</li>
+            <li><a href="#"><span>За нас</span></a></li>
+            <li><a href="#"><span>Контакти</span></a></li>
+            <li class="header">Изглед</li>
+            <li><a href="/images/main-picture"><span>Главна снимка</span></a></li>
+            <li><a href="/gallery"><span>Галерия</span></a></li>
         </ul>
     </section>
 </aside>
